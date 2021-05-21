@@ -66,40 +66,18 @@
     </div>
 
     <div class="container mt-5">
-      <div class="card mb-3 w-auto border-2 border-dark">
-        <div class="row g-0">
-          <div class="col-md-2">
-            <img src="assets/images/220px-Hokkaido_Jingu 1.png" class="mx-2 my-5 rounded-1" width="200" height="179" alt="...">
-          </div>
-          <div class="col-md-10">
-            <div class="card-body mx-5">
-              <h3 class="card-title">Hokkaido Jingu, 北海道神宮</h3>
-              <p class="card-text"><small class="text-muted">Hokkaido</small>, <small class="text-muted">Hokkaido</small></p>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              <p class="card-text"><a href="show.php" class="form-control btn btn-danger text-white">Read More</a></p>
-            </div>
-          </div>
+        <div class="text-center">
+            <img src="assets/images/220px-Hokkaido_Jingu 1.png" alt="" class="img img-thumbnail">
+            <h3>Hokkaido Jingu</h3>
+            <p class="text-secondary">Hokkaido</p>
         </div>
-      </div>
-
-      <div class="card mb-3 w-auto border-2 border-dark">
-        <div class="row g-0">
-          <div class="col-md-2">
-            <img src="assets/images/220px-Hokkaido_Jingu 1.png" class="mx-2 my-5 rounded-1" width="200" height="179" alt="...">
-          </div>
-          <div class="col-md-10">
-            <div class="card-body mx-5">
-              <h3 class="card-title">Hokkaido Jingu, 北海道神宮</h3>
-              <p class="card-text"><small class="text-muted">Hokkaido</small>, <small class="text-muted">Hokkaido</small></p>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              <p class="card-text"><a href="" class="form-control btn btn-danger text-white">Read More</a></p>
-            </div>
-          </div>
+        <div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ea molestias, praesentium ipsa impedit magni blanditiis temporibus in doloribus perferendis esse odio optio voluptate veritatis sequi possimus ex architecto amet.
+            Adipisci in necessitatibus, eos aut quisquam corporis quae nihil ipsa at beatae assumenda dicta quos illo suscipit nam, accusamus veritatis atque optio eum? Nihil sapiente eligendi, beatae corporis itaque officiis.
+            Consequatur itaque assumenda impedit commodi pariatur iste? Voluptas saepe corrupti, cupiditate commodi architecto reprehenderit aspernatur quas fugit dolores necessitatibus corporis quibusdam quia iusto non cumque, eligendi natus, illo delectus! Ad.
+            Alias eveniet illo, culpa laborum in eligendi praesentium tempora, facilis quisquam fugit cumque possimus tenetur voluptates sit delectus incidunt natus, harum ipsam excepturi? Pariatur reprehenderit soluta sunt veritatis, aliquam tenetur?
+            Dolor, aspernatur beatae. Corrupti velit id doloribus nulla accusamus possimus cumque qui, fugiat, quas provident blanditiis quo expedita adipisci ipsam inventore? Molestias blanditiis repudiandae incidunt nam, quidem culpa doloribus dolores.</p>
         </div>
-      </div>
-
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
