@@ -1,14 +1,29 @@
-<?php $title = "Create"; include("header.php")?>
+<?php 
+$title="Edit";
+include("header.php");
+include("config.php");
+$id = $_GET['id'];
+$query = "SELECT * FROM shrine WHERE id=$id";
+$show = mysqli_query($conn, $query);
+while($data = mysqli_fetch_assoc($show)){
+?>
     <div class="container mt-5">
 
-        <form enctype="multipart/form-data" method="POST" action="php/Create.php">
+        <form enctype="multipart/form-data" method="POST" action="php/Update.php">
             <div class="mb-3">
+            <input type="hidden" name="id" value="<?php echo $data['id']?>">
               <label for="shrine_name" class="form-label">Shrine Name</label>
-              <input type="text" name="shrine_name" class="form-control" id="shrine_name" aria-describedby="emailHelp">
+              <input type="text" name="shrine_name" 
+                class="form-control" id="shrine_name" 
+                aria-describedby="emailHelp"
+                value="<?php echo $data['shrine_name']?>"
+              >
             </div>
             <div class="mb-3">
               <label for="shrine_name_japan" class="form-label">Shrine Name Japan</label>
-              <input type="text" name="shrine_name_japan" class="form-control" id="shrine_name_japan">
+              <input type="text" name="shrine_name_japan" 
+                placeholder="<?php echo $data['shrine_name_japan']?>"
+              class="form-control" id="shrine_name_japan">
             </div>
             <div class="mb-3">
                 <label for="islands" class="form-label">Island</label>
@@ -18,7 +33,10 @@
                       
                       for($i = 0 ; $i < count($islands) ; $i++){
                     ?>
-                      <option value="<?php echo $islands[$i]?>"><?php echo $islands[$i]?></option>
+                      <option 
+                      value="<?php echo $data['islands'] == $islands[$i] ? $data['islands'] : $islands[$i] ?>">
+                      <?php echo $data['islands'] == $islands[$i] ? $data['islands'] : $islands[$i] ?>
+                      </option>
                     <?php } ?>
                 </select>
             </div>
@@ -28,13 +46,15 @@
             </div>
             <div class="mb-3">
               <label for="shrine_description" class="form-label">Shrine Description</label>
-              <textarea name="shrine_description" id="" rows="10" class="form-control"></textarea>
+              <textarea name="shrine_description" id="" rows="10" class="form-control">
+                        <?php print($data['shrine_description'])?>
+              </textarea>
             </div>
 
 
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-
+    
     </div>
-
+<?php } ?>
 <?php include("footer.php")?>
